@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Create Account | UntouchedTrails</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #28a745; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .form-box { background: white; padding: 40px; border-radius: 10px; width: 320px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+        input { width: 90%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; font-size: 14px; }
+        .btn { background: #004080; color: white; padding: 12px; border: none; width: 100%; border-radius: 5px; font-weight: bold; cursor: pointer; font-size: 16px; margin-top: 10px; transition: 0.3s; }
+        .btn:hover { background: #002b5e; }
+        a { color: #004080; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="form-box">
+        <h2 style="color: #004080; margin-top: 0;">Join UntouchedTrails</h2>
+        <p style="color: #666; font-size: 14px; margin-bottom: 20px;">Create an account to unlock secret itineraries.</p>
+
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="tel" placeholder="+91 Mobile Number" required>
+        <input type="password" placeholder="Create Password" required>
+        <input type="password" placeholder="Confirm Password" required>
+
+        <button class="btn" onclick="alert('Registration Successful! Please login.'); window.location.href='/login/'">Register Now</button>
+
+        <p style="font-size: 14px; margin-top: 20px;">Already have an account? <a href="/login/">Login Here</a></p>
+        <br>
+        <a href="/" style="font-size: 13px;">⬅ Back to Home</a>
+    </div>
+</body>
+</html>

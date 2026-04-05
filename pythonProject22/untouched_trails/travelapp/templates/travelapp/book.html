@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking {{ place.name }}</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body style="text-align: center;">
+    <div class="header"><h2>UntouchedTrails</h2></div>
+    <div style="max-width: 600px; margin: 50px auto; background: white; padding: 30px; border-radius: 20px; box-shadow: 0 0 20px rgba(0,0,0,0.1);">
+        <img src="{{ place.img }}" style="width: 100%; border-radius: 15px;">
+        <h1 style="color: #004080;">{{ place.name }}</h1>
+        <p class="rating">⭐ {{ place.rating }} | {{ place.reviews }}</p>
+        <p>Premium Itinerary & Luxury Hotel Included.</p>
+        <div class="price" style="margin: 20px 0;">{{ place.price }}</div>
+
+        <button onclick="confirm()" style="background: #28a745; color: white; padding: 15px 40px; border: none; border-radius: 10px; font-size: 1.2rem; cursor: pointer; width: 100%; font-weight: bold;">Confirm Booking</button>
+    </div>
+
+    <script>
+    function confirm() {
+        Swal.fire({
+          title: "🎉 Booking Successful!",
+          text: "Your itinerary for {{ place.name }} has been sent to your email.",
+          icon: "success",
+          confirmButtonColor: "#004080"
+        }).then(() => { window.location.href = "/destinations/"; });
+    }
+    </script>
+</body>
+</html>

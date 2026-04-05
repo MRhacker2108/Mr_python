@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Dashboard | UntouchedTrails</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; background-color: #f4f7f6; }
+        header { background-color: #004080; color: white; padding: 15px 40px; }
+        header a { color: white; text-decoration: none; font-weight: bold; }
+        .dashboard-container { display: flex; max-width: 1200px; margin: 40px auto; gap: 30px; }
+        .sidebar { background: white; width: 250px; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); height: 60vh; }
+        .sidebar a { display: block; padding: 15px; color: #004080; text-decoration: none; font-weight: bold; border-bottom: 1px solid #eee; }
+        .sidebar a:hover { background: #28a745; color: white; }
+        .main-content { background: white; flex: 1; padding: 40px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .status-box { background: #e9ecef; padding: 20px; border-radius: 10px; border-left: 5px solid #dc3545; margin-top: 20px; }
+    </style>
+</head>
+<body>
+<header>
+    <h2>UntouchedTrails</h2>
+    <a href="/">⬅ Back to Home</a>
+</header>
+<div class="dashboard-container">
+    <div class="sidebar">
+        <h3 style="color: #28a745;">My Account</h3>
+        <a href="#">Active Bookings</a>
+        <a href="#">Unlocked Itineraries</a>
+        <a href="#">Saved Offbeat Places</a>
+        <a href="#">Profile Settings</a>
+        <a href="/" style="color: #dc3545;">Logout</a>
+    </div>
+    <div class="main-content">
+        <h1 style="color: #004080; margin-top:0;">Welcome back, Traveler!</h1>
+        <p>Manage your luxury stays and secret itineraries here.</p>
+
+        <div class="status-box">
+            <h3 style="margin-top:0; color:#dc3545;">Next Trip: Pending Payment</h3>
+            <p><strong>Destination:</strong> Premium Secret Itinerary</p>
+            <p><strong>Amount Due:</strong> ₹35,000</p>
+            <a href="/destinations/" style="background: #28a745; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; display: inline-block;">Complete Booking</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
